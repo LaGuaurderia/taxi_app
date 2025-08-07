@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "496523779572",
+    "project_id": "radio-taxi-mollet",
+    "storage_bucket": "radio-taxi-mollet.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496523779572:android:3b7ff6a6d50aa5bab32da1",
+        "android_client_info": {
+          "package_name": "com.example.taxi_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTslMTta1aQGG71j7htwyZpnSvBZvbqMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

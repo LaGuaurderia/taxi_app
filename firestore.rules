@@ -1,0 +1,39 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Permitir acceso completo a todas las colecciones durante desarrollo
+    match /{document=**} {
+      allow read, write: if true;
+    }
+    
+    // Reglas específicas para la colección de colas
+    match /colas/{paradaId} {
+      allow read, write: if true;
+    }
+    
+    // Reglas específicas para el historial
+    match /historial/{document} {
+      allow read, write: if true;
+    }
+    
+    // Reglas específicas para servicios asignados
+    match /servicios_asignados/{document} {
+      allow read, write: if true;
+    }
+    
+    // Reglas específicas para vinculaciones SMS
+    match /vinculaciones_sms/{document} {
+      allow read, write: if true;
+    }
+    
+    // Reglas específicas para taxistas vinculados
+    match /taxistas/{document} {
+      allow read, write: if true;
+    }
+    
+    // Reglas específicas para registro de taxistas
+    match /taxistas_registro/{document} {
+      allow read, write: if true;
+    }
+  }
+} 
